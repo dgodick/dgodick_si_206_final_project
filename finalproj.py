@@ -255,38 +255,50 @@ def interactive_prompt():
             break
 
         elif response == 'help':
-            print("Please enter a number 1-4")
+            print("Please enter a number 1-4 or enter 'charts' ")
             continue
 
         elif response == '1':
             print("Opinions Section")
             opinions = get_opinions()
+            count = 0
             for title in opinions:
-                print(title[0])
+                count += 1
+                number = str(count) + ')'
+                print(number, title[0])
                 print(title[1])
             continue
 
         elif response == '2':
             print("Politics Section")
             politics = get_politics()
+            count = 0
             for title in politics:
-                print(title[0])
+                count += 1
+                number = str(count) + ')'
+                print(number, title[0])
                 print(title[1])
             continue
 
         elif response == '3':
             print("World Section")
             world = get_world()
+            count = 0
             for title in world:
-                print(title[0])
+                count += 1
+                number = str(count) + ')'
+                print(number, title[0])
                 print(title[1])
             continue
 
         elif response == '4':
             print("Home Page")
             home = get_home()
+            count = 0
             for title in home:
-                print(title[0])
+                count += 1
+                number = str(count) + ')'
+                print(number, title[0])
                 print(title[1])
             continue
 
@@ -298,7 +310,7 @@ def interactive_prompt():
                 4 Time of Day""")
             new_inp = ''
             while new_inp != "sections" or new_inp != "exit":
-                new_inp = input("What type of chart would you like to see? ")
+                new_inp = input('What type of chart would you like to see? OR type "sections" to enter a Section Id : ')
                 if new_inp == "sections":
                     break
                 if new_inp == "exit":

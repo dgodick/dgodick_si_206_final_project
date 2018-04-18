@@ -1,5 +1,6 @@
 import unittest
 from finalproj import *
+from secrets import *
 
 class DataGrab(unittest.TestCase):
     def testGetSections(self):
@@ -85,10 +86,5 @@ class DataProcess(unittest.TestCase):
         first = keys[0]
         first_value = test_time_by_section[first]
         self.assertEqual(len(list(first_value.keys())), 4)
-
-
-
-
-
 
 unittest.main()
