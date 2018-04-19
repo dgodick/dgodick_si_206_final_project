@@ -1,6 +1,5 @@
 import unittest
 from finalproj import *
-from secrets import *
 
 class DataGrab(unittest.TestCase):
     def testGetSections(self):
