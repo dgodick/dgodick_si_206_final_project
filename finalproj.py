@@ -170,7 +170,8 @@ def plotHeadlineLengths():
     for key in count:
         fig.append_trace(go.Histogram(x=count[key], name=key), row, 1)
         row+=1
-    fig['layout'].update(height=600, width=600, title='Words in Headline', xaxis=dict(title='Number of Words in Headline'), yaxis=dict(title='Number of Articles'))
+    fig['layout'].update(height=600, width=600, title='Words in Headline')
+    #, xaxis=dict(title='Number of Words in Headline'), yaxis=dict(title='Number of Articles')
     py.plot(fig, filename='simple-subplot')
 
     return count
@@ -248,7 +249,7 @@ def interactive_prompt():
     response = ''
 
     while response != 'exit':
-        response = input('Enter a Section Id or enter "charts": ')
+        response = input('Enter a Section Id (1-4) or enter "charts": ')
 
         if response == "exit":
             print("bye")
