@@ -4,8 +4,6 @@
 
 	-I chose to use the Washington Post for this project, where I crawled and scraped multiple pages in this site, which is a site I have not used before. The link for the Washington Post is https://www.washingtonpost.com.
 
-	-I have set up a secrets.py file which contains my plotly login information.
-
 2. Any other information needed to run the program (e.g., pointer to getting started info for plotly)
 
 	-For this project, I used plotly to create my visualizations. Plotly requires a login to access my visualizations. Here are the instructions for getting started on plotly:
