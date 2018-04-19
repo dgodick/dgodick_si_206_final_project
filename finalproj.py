@@ -6,7 +6,6 @@ import plotly.plotly as py
 from plotly import tools
 import plotly.graph_objs as go
 import unittest
-from secrets import *
 
 conn = sqlite3.connect('final_project.db')
 cur = conn.cursor()
